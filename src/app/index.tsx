@@ -47,8 +47,9 @@ export default function Dashboard() {
         {/*Mensagens Motivacionais*/}
         <SectionHeader title="Mensagens Motivacionais"/>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.horizontalList}>
-          <GroupCard title="Ansiedade" icon={<Feather name="cloud" color="#666" size={28} />} />
-          <GroupCard title="Tristeza" icon={<Feather name="sun" color="#666" size={28} />} />
+          <GroupCard title="Ansiedade" icon={<Feather name="zap" color="#666" size={28} />} />
+          <GroupCard title="Tristeza" icon={<Feather name="frown" color="#666" size={28} />} />
+          <GroupCard title="Autoestima" icon={<Feather name="heart" color="#666" size={28} />} />
         </ScrollView>
 
         {/* CONTEÚDO EM VIDEOS */}
