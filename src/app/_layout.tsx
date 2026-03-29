@@ -4,8 +4,8 @@ import { Tabs } from 'expo-router';
 export default function Layout() {
   return (
     <Tabs screenOptions={{
-      tabBarActiveTintColor: '#00BFA5', // Verde principal
-      tabBarInactiveTintColor: '#BDC3C7', // Cinza inativo
+      tabBarActiveTintColor: '#00BFA5', 
+      tabBarInactiveTintColor: '#BDC3C7',
       headerShown: false,
       tabBarStyle: {
         height: 70,
@@ -20,7 +20,7 @@ export default function Layout() {
         fontWeight: '500',
       }
     }}>
-      {/* INÍCIO (index.tsx) */}
+
       <Tabs.Screen
         name="index"
         options={{
@@ -29,16 +29,16 @@ export default function Layout() {
         }}
       />
 
-      {/* CHAT (chat.tsx) */}
+
       <Tabs.Screen
         name="chat"
         options={{
           title: 'Chat',
-          tabBarIcon: ({ color }) => <Feather name="users" size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Feather name="message-circle" size={24} color={color} />,
         }}
       />
 
-      {/* APOIO (apoio.tsx) */}
+
       <Tabs.Screen
         name="apoio"
         options={{
@@ -47,12 +47,20 @@ export default function Layout() {
         }}
       />
 
-      {/* PERFIL (perfil.tsx) */}
+
       <Tabs.Screen
         name="perfil"
         options={{
           title: 'Perfil',
           tabBarIcon: ({ color }) => <Feather name="user" size={24} color={color} />,
+        }}
+      />
+
+
+      <Tabs.Screen
+        name="motivacionais"
+        options={{
+          href: null,
         }}
       />
     </Tabs>
